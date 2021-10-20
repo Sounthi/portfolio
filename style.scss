@@ -411,6 +411,10 @@ h2 {
 
     }
 
+    &__wrapper:last-child {
+      margin-bottom: 0;
+    }
+
     
     &__title {
       position: absolute;
@@ -507,6 +511,43 @@ h2 {
       font-size: 28px;
     }
 
+    &__description:nth-last-child(2) {
+      padding-bottom: 0;
+    }
+
   }
 
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  position:relative;
+  width: 100%;
+  max-width: 200%;
+  height: 100%;
+  background-color: red;
+  padding: 0 90px;
+
+  &__title {
+    margin-top: -200px;
+    background-color: variables.$secondary-color;
+    color: white;
+    font-family: variables.$title-font;
+    padding: 0 50px;
+    font-size: 55px;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      margin: 0;
+    }
+
+    p:first-child {
+      margin-top: 300px;
+    }
+  }
 }
