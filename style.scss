@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 html, body {
+  position: absolute;
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
   overflow: visible;
-  overflow-x: hidden;
-  
+  overflow-x: hidden;  
 }
 
 a, a:hover, a:focus, a:active {
@@ -31,6 +31,7 @@ h2 {
   font-size: 60px;
   color: white;
   font-family: variables.$title-font;
+  font-weight: normal;
 }
 
 ///HEROS
@@ -138,6 +139,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-weight: normal!important;
 
     li {
       list-style: none;
@@ -591,6 +593,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     position: absolute;
+    z-index: -1;
 
     p {
       margin: 0;
@@ -715,6 +718,10 @@ h2 {
   }
 }
 
+.heros__img--middle {
+  display: none;
+}
+
 
 //MEDIA QUERIES
 
@@ -778,6 +785,11 @@ h2 {
 }
 
 @media screen and (max-width: 1170px){
+
+  .contact__square__reseaux img {
+    height: 50%!important;
+  
+  }
 
   
   .projet__title {
@@ -1084,6 +1096,11 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+
+  svg {
+    margin-top: -100%!important;
+  }
+
   .heros img {
     width: 20%;
     min-width: 450px;
@@ -1102,6 +1119,7 @@ h2 {
 }
 
 @media screen and (max-width: 744px) {
+
   .heros__prenom, .heros__nom {
     letter-spacing: 20px;
     br {
@@ -1170,6 +1188,10 @@ h2 {
 
 @media screen and (max-width: 690px) {
 
+
+  svg {
+    width: 110vw!important;
+   }
   .projets__heros {
     flex-direction: column;
     height: 800px!important;
@@ -1230,9 +1252,10 @@ h2 {
   }
 
   .a_propos__square::before {
-    width: 200vw;
-    left: -97px;
-    top: 40px;
+    display: none;
+  }
+  .a_propos__text {
+    padding: 20% 5%;
   }
 
   h2 {
@@ -1293,5 +1316,94 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
+  .contact__wrapper {
+   top: -20px;
+  }
+
+  .heros__prenom, .heros__nom {
+    font-size: 30px;
+    letter-spacing: 15px;
+  }
+
+  h2 {
+    font-size: 30px!important;
+  }
+
+  .a_propos__square {
+    margin-top: 3px;
+  }
+
+  .a_propos__text {
+    font-size: 17px;
+  }
+
+  .projets__heros__title p {
+    
+      font-size: 30px!important;
+    
+  }
+
+  .projets__heros__title {
+    
+    left: 30px;
+    letter-spacing: 15px;
+    top: 0px;
   
+  }
+
+  .projets__heros__texte {
+    margin-top:-70px;
+    font-size: 20px!important;
+  }
+
+  .contact__title p {
+    font-size: 30px;
+  }
+
+  .description-last {
+    padding-bottom: 20%!important;
+  }
+
+  .contact__square__borders h2 {
+    font-size: 20px!important;
+  }
+
+  .projet__description {
+    font-size: 17px !important;
+  }
+
+  .contact__square {
+    height: 400px;
+  }
+
+  .contact__description {
+    margin-top: -50px;
+  }
+
+}
+
+
+
+.contact__square__reseaux img {
+  position: relative;
+  height: 60%;
+  margin: 0 2%;
+  transition: 0.3s ease-in;
+
+}
+
+.contact__square__reseaux img:hover {
+  filter: drop-shadow(-5px 5px 0px variables.$primary-color);
+  left: 5px;
+  top: -5px;
+}
+
+.contact__square__reseaux {
+  text-align: center;
+}
+
+svg {
+  margin-top: -1%;
+  width: 101vw;
+  margin-right: 0;
 }

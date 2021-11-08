@@ -7,14 +7,21 @@ hamIcon.addEventListener('click', function() {
 
     var hamOptions = document.querySelector('.menu__options');
     var hamOptionsDisplay = hamOptions.style.display;
-    var menu = document.querySelector('.menu')
+    var menu = document.querySelector('.menu');
+    var hamIcon = document.querySelector('.ham-icon');
+
     
     if (hamOptionsDisplay !== 'flex') {
 
         hamOptions.style.display = 'flex';
         hamOptions.style.height = '100vh';
-        menu.style.backgroundColor = 'rgba(244,195,194, 1)';
-        document.body.style.overflow = "hidden";
+
+        
+        menu.style.backgroundColor = '#474448';
+        menu.style.color = 'white';
+        document.body.style.overflow = 'hidden';
+        hamIcon.style.background = '#F4C3C2';
+        
       }
     
       else {
@@ -22,6 +29,7 @@ hamIcon.addEventListener('click', function() {
         hamOptions.style.display = 'none';
         hamOptions.style.height = '';
         menu.style.backgroundColor = 'rgba(0,0,0, 0.0)';
-        document.body.style.overflow = "visible";
+        document.body.style.overflow = 'visible';
+        hamIcon.style.background = '#474448';
       }
 }) 
