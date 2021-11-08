@@ -13,12 +13,15 @@ hamIcon.addEventListener('click', function() {
 
         hamOptions.style.display = 'flex';
         hamOptions.style.height = '100vh';
-        menu.style.backgroundColor = 'rgba(244,195,194, 0.8)';
+        menu.style.backgroundColor = 'rgba(244,195,194, 1)';
+        document.body.style.overflow = "hidden";
       }
     
       else {
     
         hamOptions.style.display = 'none';
         hamOptions.style.height = '';
+        menu.style.backgroundColor = 'rgba(0,0,0, 0.0)';
+        document.body.style.overflow = "visible";
       }
 }) 
