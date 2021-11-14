@@ -12,7 +12,7 @@
 
     <!---LINKS CDN--->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sounthida Kong</title>
@@ -84,8 +84,8 @@
       <div class='projet__wrapper'>
         <div class='projet__img'>
           <button class='projet__img__overlay'></button>
-          <div class='projet__img__border'></div>
-          <button type='button' class='projet__img__button'>Jouer la vidéo</button>
+          <a class='projet__img__border' data-toggle="modal" data-target="#modalProjet01"></a>
+          <div class='projet__img__button'>Jouer la vidéo</div>
           <img src='images/img.jfif'/>
         </div>
         <div class='projet__title'>
@@ -100,7 +100,9 @@
       <!--- PROJET 02 -->
       <div class='projet__wrapper'>
         <div class='projet__img'>
+          <button class='projet__img__overlay'></button>
           <div class='projet__img__border'></div>
+          <div class='projet__img__button'>Jouer la vidéo</div>
           <img src='images/img.jfif'/>
         </div>
         <div class='projet__title__left'>
@@ -115,7 +117,9 @@
       <!--- PROJET 03 -->
       <div class='projet__wrapper'>
         <div class='projet__img'>
+          <button class='projet__img__overlay'></button>
           <div class='projet__img__border'></div>
+          <div class='projet__img__button'>Jouer la vidéo</div>
           <img src='images/img.jfif'/>
         </div>
         <div class='projet__title'>
@@ -130,7 +134,9 @@
       <!--- PROJET 04 -->
       <div class='projet__wrapper'>
         <div class='projet__img'>
+          <button class='projet__img__overlay'></button>
           <div class='projet__img__border'></div>
+          <div class='projet__img__button'>Voir le Codepen</div>
           <img src='images/img.jfif'/>
         </div>
         <div class='projet__title__left'>
@@ -179,9 +185,31 @@
       </div>
 
     </div>
+
+      <!---MODAL 01-->
+      <div class="modal" id="modalProjet01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Very shitty contentent
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
 
     <script type="module" src="/main.js"></script>
   </body>

@@ -463,7 +463,7 @@ h2 {
       margin-bottom: 10%;
       
       .description-last {
-        padding: 250px 20% 0px 20%;
+        padding: 250px 30% 0px 30%;
       }
     }
 
@@ -561,12 +561,13 @@ h2 {
     &__description {
       background-color: variables.$secondary-color;
       color: white;
-      padding: 250px 20% 150px 20%;
+      padding: 250px 40% 150px 40%;
       margin-top: -200px;
       width: 128%;
       text-align:center;
       font-family: variables.$text-font;
       font-size: 1.4em;
+      
       
     }
   }
@@ -790,6 +791,7 @@ h2 {
 
   .contact__square__reseaux img {
     height: 50%!important;
+    
   
   }
 
@@ -844,6 +846,7 @@ h2 {
 
   .projet__description {
     font-size: 22px!important;
+    padding: 250px 20% 250px 20%;
   }
 
   .projets__heros__title::before {
@@ -1434,12 +1437,11 @@ svg {
   opacity: 0%;
   position: absolute;
   height:100px;
-  width: 100px;
+  width: 100%;
   z-index: 3;
   border-radius: 50%;
   font-size: 1.5em;
+  text-align: center;
   font-family: variables.$text-font;
-  border: solid 2px variables.$primary-color;
-  background-color: variables.$secondary-color;
-  color: variables.$primary-color;
+  color: white;
 }
