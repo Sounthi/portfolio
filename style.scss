@@ -995,6 +995,11 @@ h2 {
 }
 
 @media screen and (max-width: 904px){
+
+  .a_propos-book {
+    height: 100%!important;
+    width: auto!important;
+  }
   .heros__title {
     font-size: 45px;
   }
@@ -1540,4 +1545,18 @@ footer {
   color: variables.$secondary-color;
   font-size: 1em;
   text-align: center;
+}
+.a_propos__right {
+  position: relative;
+  z-index: -1;
+ // background-color:blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -5%;
+}
+.a_propos-book {
+  position: relative;
+  width: 120%;
+ //background-color: red;
 }
