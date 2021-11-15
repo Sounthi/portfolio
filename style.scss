@@ -12,6 +12,8 @@ html, body {
   height: 100%;
   overflow: visible;
   overflow-x: hidden;  
+  margin: 0px;
+  padding: 0px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -86,6 +88,7 @@ h2 {
     align-items: center;
     position: relative;
     width: 50%;
+    flex-direction: row;
   }
 
   &__nom {
@@ -94,6 +97,7 @@ h2 {
     align-items: center;
     position: relative;
     width: 50%;
+    flex-direction: row;
   }
 
   &__title {
@@ -567,6 +571,7 @@ h2 {
       text-align:center;
       font-family: variables.$text-font;
       font-size: 1.4em;
+      z-index: 1;
       
       
     }
@@ -653,6 +658,7 @@ h2 {
     &__reseaux {
       width: 100%;
       height: 20%;
+      margin-top: 7%;
     }
 
     &:before {
@@ -846,7 +852,7 @@ h2 {
 
   .projet__description {
     font-size: 22px!important;
-    padding: 250px 20% 250px 20%;
+    padding: 250px 20% 250px 20%!important;
   }
 
   .projets__heros__title::before {
@@ -1125,6 +1131,10 @@ h2 {
 
 @media screen and (max-width: 744px) {
 
+  .contact {
+    height: initial;
+  }
+
   .heros__prenom, .heros__nom {
     letter-spacing: 20px;
     br {
@@ -1338,6 +1348,10 @@ h2 {
     margin-top: 3px;
   }
 
+  .projet__title__borders, .projet__title__left__borders {
+    font-size: 24px!important;
+  }
+
   .a_propos__text {
     font-size: 17px;
   }
@@ -1384,6 +1398,8 @@ h2 {
   .contact__description {
     margin-top: -50px;
   }
+
+
 
 }
 
@@ -1447,10 +1463,88 @@ svg {
 }
 
 .modal-lg {
-  width: 80%!important;
-  max-width: 2000px;
+  width: 100vw!important;
+  max-width: 10000px;
+  margin: 0!important;
 }
 
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.modal-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+  border:none;
+}
 .modal-footer {
   display: none;
+}
+
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.modal-header {
+  border: none;
+}
+
+.video-wrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+}
+.close {
+  color: variables.$primary-color;
+  background-color: rgba(0,0,0,0);
+  border:none;
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+  margin-right: 2%;
+}
+.close:hover {
+  transition: 1s ease;
+  transform: rotateY(360deg);
+  color: white;
+}
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.projet__wrapper a {
+  color: white;
+  font-family: variables.$text-font;
+}
+
+footer {
+  position: relative;
+  bottom: 0%;
+  font-family: variables.$text-font;
+  color: variables.$secondary-color;
+  font-size: 1em;
+  text-align: center;
+}
+
+.heros__img--right, .heros__img--left {
+  display: none!important;
 }
