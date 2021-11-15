@@ -62,22 +62,20 @@ h2 {
   img {
     position: absolute;
     top: 30%;
-    width: 50%;
+    width: 40%;
     height: auto;
-    opacity: 90%; //YOO
     min-width: 800px;
+    top: 50px;
   }
 
   &__img {
     
     &--left {
-      left: -20%;
-      transform: scaleX(-1)
+      left: -2%;
     }
 
     &--right {
-      right: -20%;
-      
+      right: -2%;      
     }
 
   }
@@ -389,11 +387,10 @@ h2 {
       display: flex;
       position: absolute;
       top: -10%;
-      left: -400px;
+      left: 0px;
       width: 50%;
       min-width: 600px;
       max-width: 850px;
-      transform: scale(-1);
 
     }
 
@@ -1543,8 +1540,4 @@ footer {
   color: variables.$secondary-color;
   font-size: 1em;
   text-align: center;
-}
-
-.heros__img--right, .heros__img--left {
-  display: none!important;
 }
