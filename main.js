@@ -19,7 +19,7 @@ hamIcon.addEventListener('click', function() {
         
         menu.style.backgroundColor = '#474448';
         menu.style.color = 'white';
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflowY = 'hidden';
         hamIcon.style.background = '#F4C3C2';
         
       }
@@ -29,7 +29,7 @@ hamIcon.addEventListener('click', function() {
         hamOptions.style.display = 'none';
         hamOptions.style.height = '';
         menu.style.backgroundColor = 'rgba(0,0,0, 0.0)';
-        document.body.style.overflow = 'visible';
+        document.body.style.overflowY = 'visible';
         hamIcon.style.background = '#474448';
       }
 }) 
