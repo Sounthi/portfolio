@@ -33,3 +33,16 @@ hamIcon.addEventListener('click', function() {
         hamIcon.style.background = '#474448';
       }
 }) 
+
+const videos = document.querySelectorAll('iframe');
+const close = document.querySelectorAll('.close');
+
+close.forEach(items=> {
+  items.addEventListener('click', () => {
+      videos.forEach(i => {
+          let source = i.src;
+          i.src = '';
+          i.src = source;
+      })
+  })
+})
