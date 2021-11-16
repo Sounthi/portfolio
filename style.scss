@@ -386,11 +386,10 @@ h2 {
     &__img {
       display: flex;
       position: absolute;
-      top: -10%;
-      left: 0px;
-      width: 50%;
-      min-width: 600px;
-      max-width: 850px;
+      top: 70px;
+      left: -50px;
+      width: 40%;
+      max-width: 600px;
 
     }
 
@@ -708,7 +707,7 @@ h2 {
     height: 100%;
     padding: 0px;
     margin: 0px;
-    top: 50%;
+    top: 45%;
     transform: translateY(-25%);
     transition: 1s ease-in-out;
 
@@ -726,6 +725,10 @@ h2 {
 
 .heros__img--middle {
   display: none;
+
+  &-right {
+    display: none;
+  }
 }
 
 
@@ -797,8 +800,6 @@ h2 {
     
   
   }
-
-  
   .projet__title {
     width: 30%;
     padding: 10px!important;
@@ -846,6 +847,8 @@ h2 {
     height: 800px;
     top: 680px;
   }
+
+
 
   .projet__description {
     font-size: 22px!important;
@@ -906,7 +909,7 @@ h2 {
 
 @media screen and (max-width: 1062px){
 
-  
+
   
   .heros__title {
     font-size: 45px;
@@ -996,10 +999,24 @@ h2 {
 
 @media screen and (max-width: 904px){
 
-  .a_propos-book {
-    height: 100%!important;
-    width: auto!important;
+  .a_propos__text {
+    padding: 20% 5%;
   }
+
+  .a_propos-book {
+    width: 60%!important;
+    min-width: 494px;
+    height: auto!important;
+    left: 50px;
+    top: -80px;
+    //background-color: red;
+  }
+
+  .a_propos {
+    height: 1300px;
+  }
+
+
   .heros__title {
     font-size: 45px;
   }
@@ -1110,6 +1127,11 @@ h2 {
 
 @media screen and (max-width: 768px) {
 
+  .projets__heros__img {
+    width: 50%;
+    top: -10px;
+  }
+  
   svg {
     margin-top: -100%!important;
   }
@@ -1133,6 +1155,21 @@ h2 {
 
 @media screen and (max-width: 744px) {
 
+  .heros__title {
+    flex-direction: column;
+    align-items: center;
+    top: 0%;
+  }
+
+  .heros__img {
+
+    &--left, &--right {
+      width: 50%!important;
+     // background-color:red;
+      top: 30%!important;
+    }
+  }
+
   .contact {
     height: initial;
   }
@@ -1146,26 +1183,11 @@ h2 {
 
     flex-direction: row;
   }
-  .heros__title {
-    flex-direction: column;
-    align-items: center;
-    top: 5%;
-  }
+  
+  
 
-  .heros__img {
-
-    &--left, &--right {
-      display: none;
-    }
-
-    &--middle {
-      display: flex!important;
-      position: absolute!important;
-      top: 40%!important;
-      width: 90%!important;
-      min-width: 0!important;
-      
-    }
+  .heros img {
+    min-width: 0px;
   }
   
   .contact {
@@ -1205,6 +1227,9 @@ h2 {
 
 @media screen and (max-width: 690px) {
 
+  .projets__heros {
+    margin-bottom: 30%;
+  }
 
   svg {
     width: 110vw!important;
@@ -1248,14 +1273,9 @@ h2 {
   }
 
   .projets__heros__img {
-    display: flex;
-    top: 55%;
+    top: 480px;
     left: 50%;
     transform: translateX(-50%);
-    order: 4;
-
-    min-width: 0;
-    width: 80%;
   }
 
   .projets__heros__description {
@@ -1271,9 +1291,7 @@ h2 {
   .a_propos__square::before {
     display: none;
   }
-  .a_propos__text {
-    padding: 20% 5%;
-  }
+
 
   h2 {
     font-size: 40px!important;
@@ -1333,6 +1351,54 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
+
+  .heros__title {
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+  }
+
+  .heros__img {
+
+    &--left, &--right {
+      display: none;
+    }
+
+    &--middle {
+      display: flex!important;
+      position: absolute!important;
+      top: 40%!important;
+      width: 90%!important;
+      min-width: 0!important;
+
+      &-right {
+        display: flex;
+        position: absolute!important;
+        width: 90%!important;
+        top: -14%!important;
+       // background-color: red;
+      }
+      
+    }
+  }
+
+  .projets__heros__img {
+    top: 450px;
+    width: 70%!important;
+  }
+
+  .a_propos-book {
+    width: 60%!important;
+    min-width: 400px;
+    height: auto!important;
+    left: 30px;
+    top: -80px;
+    //background-color: red;
+  }
+
+  .a_propos {
+    height: 1000px;
+  }
   .contact__wrapper {
    top: -20px;
   }
