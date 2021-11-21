@@ -1,5 +1,7 @@
 import './style.scss'
 
+gsap.registerPlugin(ScrollTrigger);
+
 var hamIcon = document.querySelector('.menu__icon');
 
 
